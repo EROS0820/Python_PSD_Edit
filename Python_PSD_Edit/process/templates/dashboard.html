@@ -5,20 +5,35 @@
 <br>
 
 <div class="row">
-	<div class="col-md-8">
-		A
-	</div>
-	<div class="col-md-8">
-		B
-	</div>
-	<div class="col-md-8">
-		C
-	</div>
-	<div class="col-md-8">
-		D
-	</div>
-	<div class="col-md-8">
-		E
+	<div class="col-md-4">
+		<form action="/upload/" method="post" enctype="multipart/form-data">
+			<div class="image-block">
+				<b>Select images to upload:</b>
+			</div>
+			<div class="image-block">
+				<span>Left Sleev: </span>
+				<input type="file" name="leftsleev" id="leftsleev">
+			</div>
+			<div class="image-block">
+				<span>Right Sleev: </span>
+				<input type="file" name="rightsleev" id="rightsleev">
+			</div>
+			<div class="image-block">
+				<span>Left Hood: </span>
+				<input type="file" name="lefthood" id="lefthood">
+			</div>
+			<div class="image-block">
+				<span>Right Hood: </span>
+				<input type="file" name="righthood" id="righthood">
+			</div>
+			<div class="image-block">
+				<span>Front: </span>
+				<input type="file" name="front" id="front">
+			</div>
+			<div class="image-block">
+				<input type="submit" value="Upload Image" name="submit">
+			</div>
+		  </form>
 	</div>
 </div>
 {% endblock content %}
